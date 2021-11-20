@@ -1,0 +1,118 @@
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo {
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 40px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.subtitulo {
+    margin: 0;
+    color: #fff;
+    display: inline;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.sabor { 
+    color: #fff;
+    margin: 7px 0;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0;
+}
+
+.linea-division {
+    width: 100%;
+    height: 3px;
+    background-color: #32a7ca;
+}
+
+
+/*estilos de materializa*/
+
+.carousel{
+    min-height:600px;
+    margin-bottom:200px;
+}
+
+.carousel .carousel-item{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+    user-select:none; /*para que el usuario no pueda seleccionar el texto y copiarlo*/
+    /*background:white; cuando se agrega esto, el border-radius no funciona*/
+    width:600px;
+    height:600px;
+}
+.carousel .carousel-item img{
+    width:100%;
+    height:60%;
+    object-fit:cover;   /*para que la imagen no se deforme*/
+    cursor:pointer;
+    border-radius:25px;
+}
+
+
+
+.card-link{
+    /*width:50%;   despues de darle un width fijo se agrega (margin:auto) para que se centren los elementos
+    margin:auto;    ----background: rgba(0,0,0,0.7);le da transparencia al boton*/
+    background: rgba(62, 44, 221, 0.7);
+    color:white;
+    padding: 10px 10px;
+    cursor:pointer;
+    width:25%;  /*el tamaño en ancho del boton submit-enviar*/
+    border:none;
+    border-radius:20px;
+    font-size:1.3em;
+    margin-left:10%;
+    transition:.5s;
+    margin-top:10px;
+    display:inline-block;
+   
+}
+.card-link a{
+    color:white;
+    text-decoration:none; /*para sacarle es subrayado y el color azul*/
+    font-weight: 600;
+}
+.card-link:hover{
+    transform:translateX(10px); /*para que el boton se mueva de arriba abajo --y translateX, es para que se mueva izq-der, el desplazamiento es mayor 20px*/
+  }
+
+
+/*.carousel .carousel-item img{
+    width:100%;
+    height:80%;
+    object-fit:cover;   --para que la imagen no se deforme--
+    position:absolute;
+    top:0; --para dejar un espacio entre el top y la imagen se puede agregar 10px para que se pueda ver el texto--
+    left:0;
+    z-index:-1; --por defecto el fondo viene con 0,, esto coloca el texto adelante de la imagen--
+    border-radius:25px;
+}*/
+
+
+/*.carousel .carousel-item{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    user-select:none;  --para que el usuario no pueda seleccionar el texto y copiarlo--
+    --background:white; cuando se agrega esto, el border-radius no funciona--
+    width:600px;
+    height:600px;
+}*/
