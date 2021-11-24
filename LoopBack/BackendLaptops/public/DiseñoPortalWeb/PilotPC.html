@@ -96,10 +96,10 @@
                         <h2 class="subtitulo">HP Pavilion 14 Pulgadas Intel Core i5 1135G7 -Ram 8GB -SSD 512GB</h2>
                         <div class="linea-division"></div>
                         <div class="card-link">
-                            <a href="#">Comprar</a>
+                            <a href="#"> Comprar</a>
                           </div>
                           <div class="card-link">
-                            <a href="#">Financiar</a>
+                            <a href="#">  Financiar</a>
                           </div>
                         <p class="sabor">$ 4.599.000</p>
                         <img src="img/slider1.jpg" alt="">
@@ -188,14 +188,17 @@
           <h1><span> <i class="fas fa-file-signature"></i></span>Registrar Datos Personales</h1>
           <br>
         <div class="block"> 
-        <input type="text" class="formulario__input" placeholder="Nombres">
-        <input type="text" class="formulario__input" placeholder="Apellidos">
-        <input type="text" class="formulario__input" placeholder="Dirección">
-        <input type="text" class="formulario__input" placeholder="Ciudad">
-        <input type="text" class="formulario__input" placeholder="Movil">
-        <input type="text" class="formulario__input" placeholder="Email">
-        
-        <div class="col-md-4">
+        <input type="text" class="formulario__input" id="txtNombres" placeholder="Nombres" required>
+        <input type="text" class="formulario__input" id="txtApellidos" placeholder="Apellidos" required>
+        <input type="text" class="formulario__input" id="txtDireccion" placeholder="Dirección" required>
+        <input type="text" class="formulario__input" id="txtCiudad" placeholder="Ciudad" required>
+        <input type="text" class="formulario__input" id="txtMovil" placeholder="Movil" required>
+        <input type="email" class="formulario__input" id="txtEmail" placeholder="Email" required>
+        <div class="invalid-feedback">
+          Este campo es requerido
+        </div>
+
+        <div class="col-md-6">
         <label for="inputState" class="form-label"><b>Compra o Finaciación</b></label>
           <select id="inputState" class="form-select">
             <option selected>Choose...</option>
