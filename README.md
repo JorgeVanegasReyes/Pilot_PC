@@ -1,0 +1,1 @@
+Proyecto de la universidad donde se crea una aplicación web de venta de Laptops y dependiendo del rol, sea cliente, vendedor o administrador, se podrá interactuar con la aplicación de manera diferente.
