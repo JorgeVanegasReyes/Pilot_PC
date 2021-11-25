@@ -1,0 +1,11 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-image: url(img/Error404.jpg); /*para la imagen estatica de fondo */
+    background-size:cover;
+    background-attachment:fixed;
+    background-repeat: no repeat;   
+}
