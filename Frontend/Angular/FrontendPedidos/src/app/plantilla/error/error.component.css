@@ -3,9 +3,22 @@
     padding:0;
     box-sizing:border-box;
 }
-body{
-    background-image: url(img/Error404.jpg); /*para la imagen estatica de fondo */
-    background-size:cover;
-    background-attachment:fixed;
-    background-repeat: no repeat;   
+
+
+
+.pic img{
+      margin-left:2%;
+      margin-top:-6%;
+      margin-bottom:-6%;
+      width:96%;
+      height:40em;
+      /* height:70%;    Los navegadores no hacen caso de esta propiedad en %, se debe colocar em */
+      position:relative;
+      box-shadow:0px 0px 20px 0px black;
+             
 }
+
+/*background-size:cover;
+    background-attachment:fixed;
+    background-repeat: no repeat;
+    */

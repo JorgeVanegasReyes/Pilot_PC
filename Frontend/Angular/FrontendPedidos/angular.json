@@ -27,7 +27,8 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/materialize-css/dist/css/materialize.min.css"
+              "node_modules/materialize-css/dist/css/materialize.min.css",
+              "src/app/plantilla/inicio/inicio.component.css"
             ],
             "scripts": [
               "node_modules/materialize-css/dist/js/materialize.min.js"

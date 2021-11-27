@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*FOOTER*/
+.footer{
+    width:100%;
+    padding:20px 0px;  /*50px-arriba y abajo ---0px-izquierda,derecha*/
+    
+    
+  }
+  .container_footer{
+    display:flex; /*para que las columnas queden una al lado de la otra*/
+    justify-content:space-between; /*para que las cajas tengan  las mismas dimensiones y ocupen el ancho completo del proyecto*/
+    margin:auto;/*el contenedor se mantenga centrado*/
+    max-width:90%;  /*ocupa solo el 80% de de los borde de la pantalla*/
+    background: rgba(151, 143, 228, 0.5);
+  }
+  .box_footer{
+      display:flex;
+      flex-direction:column; /*para que se alinien en fila y no en columna*/
+      padding:40px; /*para que mantengan un pequeño margen de distancia*/
+      
+  }
+  .box_footer .terms1{
+      width:300px;
+      font-weight: 500;
+      font-size:13px;
+      color:white;
+  }
+  .box_footer .terms2{
+    width:200px;
+    font-weight: 500;
+    font-size:13px;
+    color:white; 
+  }
+  .terms3{
+    width:500px;
+    font-weight: 500;
+    font-size:13px;
+    color:white;
+    padding:1px 16px;  
+  }
+  .terms3 span{
+    margin-right:5px;
+    text-shadow:0px 0px 4px black;
+    font-size:23px;
+  }
+  .terms2 span{
+    margin-right:15px;
+    text-shadow:0px 0px 4px black;
+    font-size:23px;
+  }
+  h5{
+    text-shadow:0px 0px 7px black;
+  }
+  .box_footer a{
+    color:white;
+    font-weight:700;
+    margin-right:15px; /*separacion de las redes sociales*/
+    text-decoration: none;
+  }
+  .box_footer a:hover{
+    opacity:0.8;
+  }
+  .container{
+      font-size:15px;
+      color:white;
+  }

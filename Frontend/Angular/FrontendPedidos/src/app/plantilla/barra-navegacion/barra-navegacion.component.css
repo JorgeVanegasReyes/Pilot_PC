@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.menu_bar{
+    background: rgba(151, 143, 228, 0.5);
+    text-align:center;
+    width:100%;
+    display:inline-flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 0 5%;
+    height:2.2cm; 
+  }
+  .logo{
+    color:white;
+    font-size:35px;
+    font-family:Arial;
+    font-weight:1200;
+  }
+  .logo span{
+    color:blue;
+    font-size:40px;
+  }
+  .menu_bar ul{
+    list-style:none;
+    display:inline-flex;
+    color:white;
+  }
+  .menu_bar ul li{
+    padding:10px 35px;
+    padding-top:35px;
+  }
+  .menu_bar ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:12px;
+    padding: 3px;
+  }
+  .menu_bar ul li a span{
+    margin-right:15px; 
+    font-size:18px;
+  }
+  .menu_bar ul li:hover{
+    background:rgba(0,0,0,0.5);
+    /*border-radius: 90px;
+    background:rgba(70, 5, 247, 0.7);*/
+  }
+  .col span{
+    margin-right:15px;
+  }
