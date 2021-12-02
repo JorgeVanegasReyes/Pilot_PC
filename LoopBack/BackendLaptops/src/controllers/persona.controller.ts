@@ -50,7 +50,9 @@ export class PersonaController {
       let token = this.servicioAutenticacion.GenerarTokenJWT(p);
       return{
         datos:{
-          
+          //nombre : p.nombres,
+          //correo : p.correo,
+          //id: p.id
         },
         tk:token
       }
