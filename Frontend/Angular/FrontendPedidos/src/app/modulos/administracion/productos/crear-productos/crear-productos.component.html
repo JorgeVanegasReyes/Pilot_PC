@@ -1,1 +1,81 @@
-<p>crear-productos works!</p>
+<!-- Form Section -->
+
+   <form [formGroup]="fgValidador" (ngSubmit)="GuardarProducto()"> 
+    <form> <!-- Change The Form Method From Here-->
+        <div class="card-panel z-depth-5">
+    
+            <!-- Form Logo Section  -->
+    
+            <div class="row margin">
+                <div class="col s12 m12 l12 center">
+                    <img src="https://i.imgur.com/ypAbAYt.png"
+                     alt="" class="responsive-img circle" style="width:100px;">
+                    <p>Crear Producto</p>
+                </div>
+            </div>
+    
+            <!-- Form Username Input Section -->
+    
+            <div class="col s12 m12 l12">
+                <div class="input-field">
+                    <i class="material-icons prefix">person</i>
+                    <input  formControlName = 'nombre' type="text" name="username" >
+                    <label for="username">Ingrese el nombre del producto</label>
+                </div>
+            </div>
+
+            <div class="col s12 m12 l12">
+                <div class="input-field">
+                    <i class="material-icons prefix">person</i>
+                    <input  formControlName = 'descripcion' type="text" name="descripcion" >
+                    <label for="descripcion">Ingrese la descripcion del producto</label>
+                </div>
+            </div>
+
+            <div class="col s12 m12 l12">
+                <div class="input-field">
+                    <i class="material-icons prefix">person</i>
+                    <input  formControlName = 'imagen' type="text" name="imagen" >
+                    <label for="imagen">Ingrese la imagen del producto</label>
+                </div>
+            </div>
+
+            <div class="col s12 m12 l12">
+                <div class="input-field">
+                    <i class="material-icons prefix">person</i>
+                    <input  formControlName = 'existencia' type="text" name="existencia" >
+                    <label for="existencia">Ingrese la existencia del producto</label>
+                </div>
+            </div>
+
+            <div class="col s12 m12 l12">
+                <div class="input-field">
+                    <i class="material-icons prefix">person</i>
+                    <input  formControlName = 'valor_und' type="text" name="valor_und" >
+                    <label for="valor_und">Ingrese el valor del producto</label>
+                </div>
+            </div>
+
+            <div class="col s12 m12 l12">
+                <div class="input-field">
+                    <i class="material-icons prefix">person</i>
+                    <input  formControlName = 'estado' type="text" name="estado" >
+                    <label for="estado">Ingrese estado del producto</label>
+                </div>
+            </div>
+    
+    
+    
+                <!-- Form Button Section  -->
+    
+            <div class="center">
+                <input type="submit" value="Guardar Producto" name="login" 
+                class="btn waves-effect waves-light " 
+                style="width:100%; background-color: #ff4081;">
+            </div>
+    
+               
+            <br>
+        </div>
+    </form>
+

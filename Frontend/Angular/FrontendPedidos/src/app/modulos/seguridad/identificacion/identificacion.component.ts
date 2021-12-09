@@ -16,14 +16,21 @@ export class IdentificacionComponent implements OnInit {
   fgValidador : FormGroup = this.fb.group ({
     'usuario':['',[Validators.required, Validators.email]],
     'clave':['',[Validators.required]],
+    'recaptcha':['',[Validators.required]],
   })
+
+  siteKey:string="";
   constructor(private fb: FormBuilder,
     private servicioSeguridad:SeguridadService,
     private router : Router
-    ) { }
+    ) {
+      this.siteKey="6LdggY8dAAAAACpz8JOPrdEHxcsbg9qEV5jVLtTD";
+     }
 
   ngOnInit(): void {
   }
+
+
   IdentificarUsuario() {
     let usuario = this.fgValidador.controls['usuario'].value;
     let clave = this.fgValidador.controls['clave'].value;

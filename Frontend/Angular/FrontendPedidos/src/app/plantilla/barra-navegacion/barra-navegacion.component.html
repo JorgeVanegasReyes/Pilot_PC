@@ -9,8 +9,11 @@
             <li *ngIf = "sesionIniciada"> 
                 <a routerLink ="/inicio"><span><i class="fas fa-home"></i></span>Inicio</a>
              </li>
+             <li *ngIf = "sesionIniciada" > 
+              <a routerLink ="/administracion/buscar-productos">Productos</a>
+          </li>
             <li *ngIf = "sesionIniciada" > 
-              <a routerLink ="/administracionpersonas">Clientes</a>
+              <a routerLink ="/administracion/personas">Clientes</a>
           </li>
             <li *ngIf = "sesionIniciada">
                 <a routerLink ="/"><span><i class="fas fa-file-signature"></i></span>Solicitar<br/>Pedido</a>
@@ -27,8 +30,37 @@
           <li *ngIf = "!sesionIniciada">    
             <a routerLink ="/seguridad/identificar">Iniciar Sesion</a>
         </li>
+       
       </ul>
     </div>
+
+    <ul class="sidenav" id="mobile-demo"> 
+          <li *ngIf = "sesionIniciada"> 
+            <a routerLink ="/inicio"><span><i class="fas fa-home"></i></span>Inicio</a>
+        </li>
+        <li *ngIf = "sesionIniciada" > 
+          <a routerLink ="/administracion/buscar-productos">Productos</a>
+      </li>
+        <li *ngIf = "sesionIniciada" > 
+          <a routerLink ="/administracion/personas">Clientes</a>
+      </li>
+        <li *ngIf = "sesionIniciada">
+            <a routerLink ="/"><span><i class="fas fa-file-signature"></i></span>Solicitar<br/>Pedido</a>
+        </li>
+        <li *ngIf = "sesionIniciada">
+            <a routerLink ="/"><span><i class="fas fa-user-lock"></i></span>Empleado</a>
+        </li>
+        <li *ngIf = "sesionIniciada">   
+          <a routerLink ="/seguridad/cambioclave">Cambie su Clave</a>
+      </li>
+      <li *ngIf = "sesionIniciada">   
+        <a routerLink ="/seguridad/cerrar-sesion">Cerrar Sesion</a>
+    </li>
+      <li *ngIf = "!sesionIniciada">    
+        <a routerLink ="/seguridad/identificar">Iniciar Sesion</a>
+    </li>
+    
+    </ul>
   
   </body>
   

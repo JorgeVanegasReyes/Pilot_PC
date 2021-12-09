@@ -97,6 +97,7 @@ export class ProductosController {
     return this.productosRepository.updateAll(productos, where);
   }
 
+  @authenticate.skip()
   @get('/productos/{id}')
   @response(200, {
     description: 'Productos model instance',

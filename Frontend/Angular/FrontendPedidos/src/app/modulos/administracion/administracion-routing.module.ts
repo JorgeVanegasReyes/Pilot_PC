@@ -46,6 +46,23 @@ const routes: Routes = [
     component: EditarProductosComponent
   },
 
+  {
+    path:"buscar-productos",
+    component: BuscarProductosComponent
+  },
+  {
+    path:"editar-productos/:id",
+    component: EditarProductosComponent
+  },
+  {
+    path:"crear-productos",
+    component: CrearProductosComponent
+  },
+  {
+    path:"eliminar-productos/:id",
+    component: EliminarProductosComponent
+  },
+
   //PEDIDOS
   {
     path:"asignar",

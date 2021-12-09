@@ -1,1 +1,33 @@
-<p>buscar-productos works!</p>
+<table class= "table responsive">
+    <thead>
+        <tr>
+            <th> NOMBRE </th>
+            <th> DESCRIPCION </th>
+            <th> IMAGEN </th>
+            <th> EXISTENCIA </th>
+            <th> VALOR_UND </th>
+            <th> ESTADO </th>
+            <th> EDICION </th>
+            <th> ELIMINACION </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor= "let p of ListaProductos">
+            <td>{{p.nombre}} </td>
+            <td>{{p.descripcion}} </td>
+            <td> <img src="{{p.imagen}}" class="imagenproducto"/> </td>
+            <td>{{p.existencia}} </td>
+            <td>{{p.valor_und}} </td>
+            <td>{{p.estado}} </td>
+            <td> <a routerLink="/administracion/editar-productos/{{p.id}}" class="btn"> Editar</a> </td>
+            <td> <a routerLink="/administracion/eliminar-productos/{{p.id}}" class="btn btn-danger"> Eliminar</a> </td>
+        </tr>
+    </tbody>
+
+</table>
+
+<br>
+<br>
+
+<a routerLink = "/administracion/crear-productos" class="btn">Crear Productos</a>
