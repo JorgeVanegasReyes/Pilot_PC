@@ -1,0 +1,39 @@
+
+.card-panel{
+    background-image: url(slider4.jpg); /*para la imagen estatica de fondo */
+    background-size:cover;
+    
+    background-repeat: no repeat; 
+}
+.col{
+    margin-left:5%;
+    margin-top:4%;
+    width:90%;
+}
+.col label{
+    color:black;
+    font-size: 1.3em;
+}
+.card-panel{
+    width:60%;
+    margin-left:20%;
+   
+}
+.row p{
+    text-align:center;
+    font-weight: bold; /*negrita*/
+    font-weight: 700; /*grosor-negrita*/
+    font-family: fantasy;
+    font-size:3em;
+    margin-top:-7px;
+}
+.row span{
+    text-align:center;
+    font-weight: bold; /*negrita*/
+    font-weight: 700; /*grosor-negrita*/
+    font-family: fantasy;
+    font-size:3em;
+    margin-top:-7px;
+}
+
+

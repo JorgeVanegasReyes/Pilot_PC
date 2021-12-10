@@ -1,16 +1,18 @@
     <link rel="stylesheet" href="identificacion.component.css">
 
-    <div className="contenedor">
+    <div class="contenedor">
         <div className="registrate">
             <h1>Inicio de Sesion <br/>APP-Pilot PC</h1>
 
             <form className="formulario" action="" onSubmit={submit}>
+                <i class="material-icons prefix">person</i>
                 <input type="text" name="usuario" id="usuario" placeholder="Usuario" />
+                <i class="material-icons prefix">lock</i>
                 <input type="password" name="password" id="password" placeholder="Contraseña" />
                 
                 <br>
                 <br>
-                <div className="recaptcha">
+                <div class="recaptcha">
                     <form [formGroup]="fgValidador">
                         <ngx-recaptcha2 #captchaElem
                           [siteKey]="siteKey"
@@ -20,7 +22,7 @@
                 </div>
                 <br>
                 <br>
-                <button type="submit">Ingresar</button>
+                <button type="submit" class="ingresar">Ingresar</button>
             </form>
         </div>
         <div>
@@ -28,8 +30,9 @@
         </div>
     </div>
 
+    
+    
 
-
-    <script type="text/javascript" src="assets/js/identificacion.js"></script>
+    
 
 

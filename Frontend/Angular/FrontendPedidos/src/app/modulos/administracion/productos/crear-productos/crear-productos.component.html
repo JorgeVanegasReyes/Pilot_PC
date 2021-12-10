@@ -1,5 +1,5 @@
 <!-- Form Section -->
-
+  <div class="inicioSession">
    <form [formGroup]="fgValidador" (ngSubmit)="GuardarProducto()"> 
     <form> <!-- Change The Form Method From Here-->
         <div class="card-panel z-depth-5">
@@ -8,9 +8,12 @@
     
             <div class="row margin">
                 <div class="col s12 m12 l12 center">
-                    <img src="https://i.imgur.com/ypAbAYt.png"
-                     alt="" class="responsive-img circle" style="width:100px;">
-                    <p>Crear Producto</p>
+                    <img src="assets/img/carousel2.jpg"
+                     alt="" class="responsive-img circle" style="width:200px;">
+                    <br>
+                    <br>
+                    <p>CREAR PRODUCTO</p>
+                    <span> <i class="material-icons prefix">create</i> </span>
                 </div>
             </div>
     
@@ -18,7 +21,7 @@
     
             <div class="col s12 m12 l12">
                 <div class="input-field">
-                    <i class="material-icons prefix">person</i>
+                    <i class="material-icons prefix">chrome_reader_mode</i>
                     <input  formControlName = 'nombre' type="text" name="username" >
                     <label for="username">Ingrese el nombre del producto</label>
                 </div>
@@ -26,7 +29,7 @@
 
             <div class="col s12 m12 l12">
                 <div class="input-field">
-                    <i class="material-icons prefix">person</i>
+                    <i class="material-icons prefix">description</i>
                     <input  formControlName = 'descripcion' type="text" name="descripcion" >
                     <label for="descripcion">Ingrese la descripcion del producto</label>
                 </div>
@@ -34,7 +37,7 @@
 
             <div class="col s12 m12 l12">
                 <div class="input-field">
-                    <i class="material-icons prefix">person</i>
+                    <i class="material-icons prefix">add_a_photo</i>
                     <input  formControlName = 'imagen' type="text" name="imagen" >
                     <label for="imagen">Ingrese la imagen del producto</label>
                 </div>
@@ -42,7 +45,7 @@
 
             <div class="col s12 m12 l12">
                 <div class="input-field">
-                    <i class="material-icons prefix">person</i>
+                    <i class="material-icons prefix">queue</i>
                     <input  formControlName = 'existencia' type="text" name="existencia" >
                     <label for="existencia">Ingrese la existencia del producto</label>
                 </div>
@@ -50,7 +53,7 @@
 
             <div class="col s12 m12 l12">
                 <div class="input-field">
-                    <i class="material-icons prefix">person</i>
+                    <i class="material-icons prefix">monetization_on</i>
                     <input  formControlName = 'valor_und' type="text" name="valor_und" >
                     <label for="valor_und">Ingrese el valor del producto</label>
                 </div>
@@ -58,7 +61,7 @@
 
             <div class="col s12 m12 l12">
                 <div class="input-field">
-                    <i class="material-icons prefix">person</i>
+                    <i class="material-icons prefix">verified_user</i>
                     <input  formControlName = 'estado' type="text" name="estado" >
                     <label for="estado">Ingrese estado del producto</label>
                 </div>
@@ -69,6 +72,7 @@
                 <!-- Form Button Section  -->
     
             <div class="center">
+                <i class="material-icons prefix">done_all</i>
                 <input type="submit" value="Guardar Producto" name="login" 
                 class="btn waves-effect waves-light " 
                 style="width:100%; background-color: #ff4081;">
@@ -78,4 +82,5 @@
             <br>
         </div>
     </form>
-
+  </form>
+    </div>
